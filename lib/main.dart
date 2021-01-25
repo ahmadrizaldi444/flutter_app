@@ -9,6 +9,8 @@ import 'package:flutter_application_2/card/cardlayout.dart';
 import 'package:flutter_application_2/hero/herolayout.dart';
 import 'package:flutter_application_2/image/shadermaskgradient.dart';
 import 'package:flutter_application_2/layout/Loginlayout.dart';
+import 'package:flutter_application_2/tools/MultipleProviderManagement.dart';
+import 'package:flutter_application_2/tools/ProviderStateManagement.dart';
 import 'package:flutter_application_2/tools/sharedpref.dart';
 
 void main() {
@@ -23,6 +25,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: SharedprefExample());
+    return MaterialApp(home: MultipleProviderState());
   }
 }
